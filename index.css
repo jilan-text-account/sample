@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#search-section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Separator between sections */
+  }
+
+  #results-section {
+    padding: 20px;
+    display: flex; /* Arrange cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Spacing between cards */
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px; /* Adjust card width as needed */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+
+  .highlighted {
+    background-color: yellow; /* Or any other highlight color */
+  }
+
+  /* Optional: Styling for no results message */
+  #no-results {
+      display: none; /* Initially hidden */
+      margin-top: 20px;
+      color: gray;
+  }
+
+/* scrollintoview css */
+
+#section1, #section2 { /* Style your sections as needed */
+    height: 300px; /* Example height */
+    background-color: #f0f0f0; /* Example background color */
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Spacing between sections */
+    padding: 20px;
+  }
+
+  #section2 {
+    background-color: #e0e0e0;
+  }
+
+  /* Optional: Style the button */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Style for the target text */
+  #target-text {
+    background-color: yellow; /* Highlight the target text */
+    padding: 5px;
+  }

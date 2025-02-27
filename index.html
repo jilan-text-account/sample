@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search and Highlight Cards</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<div id="search-section">
+  <input type="text" id="search-input" placeholder="Enter search term">
+  <button id="search-button">Search</button>
+</div>
+<div id="results-section">
+    <div class="card" data-keywords="apple, fruit, red">Card 1: Apple</div>
+    <div class="card" data-keywords="banana, fruit, yellow">Card 2: Banana</div>
+    <div class="card" data-keywords="orange, fruit, citrus">Card 3: Orange</div>
+    <div class="card" data-keywords="grape, fruit, purple">Card 4: Grape</div>
+    <div class="card" data-keywords="car, vehicle, red">Card 5: Car</div>
+    <div class="card" data-keywords="bike, vehicle, two-wheeler">Card 6: Bike</div>
+    <div class="card" data-keywords="bus, vehicle, public">Card 7: Bus</div>
+    <div class="card" data-keywords="train, vehicle, railway">Card 8: Train</div>
+  </div>
+  
+  <div id="no-results">No matching items found.</div>
+
+  <button id="scroll-to-section1">Scroll to Section 1</button>
+<button id="scroll-to-section2">Scroll to Section 2</button>
+<button id="scroll-to-text">Scroll to Text</button>
+
+
+<div id="section1">
+  <h2>Section 1</h2>
+  <p>Some content for section 1.</p>
+</div>
+
+<div id="section2">
+  <h2>Section 2</h2>
+  <p>Some content for section 2.</p>
+</div>
+
+<p>Some text before the target text.</p>
+<p id="target-text">This is the target text you want to scroll to.</p>
+<p>Some more text after the target text.</p>
+
+<script src="./index.js"></script>
+</body>
+</html>
